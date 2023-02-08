@@ -1,32 +1,17 @@
 import "./App.css";
+import { Company } from "./components/Company";
+import { COMPANIES } from "./server/companies";
+import { iCompany } from "./types";
 
-interface Company {
-  title: string;
-  description: string;
-  url: string;
-}
-
-const companies: Company[] = [
-  {
-    title: "Heliowater",
-    description: "L'eau potable autonome grâce au soleil",
-    url: "heliowater.fr",
-  },
-];
+const companies: iCompany[] = COMPANIES;
 
 function App() {
   return (
     <div className="App">
       <h1>QVEMA Space</h1>
-      <div className="content">
-        {companies.map((company: Company) => {
-          return (
-            <div>
-              <div>{company.title}</div>
-              <div>{company.description}</div>
-              <div>{company.url}</div>
-            </div>
-          );
+      <div className="card-list">
+        {companies.map((company: iCompany) => {
+          return <Company company={company} />;
         })}
       </div>
       <p className="read-the-docs">

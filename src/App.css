@@ -5,8 +5,10 @@
   text-align: center;
 }
 
-.content {
-  padding: 2em;
+.card-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 .read-the-docs {

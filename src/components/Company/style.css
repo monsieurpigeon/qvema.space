@@ -1,0 +1,29 @@
+.card {
+    background: #222;
+    border-radius: 3px;
+    flex-basis: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 1rem;
+}
+
+.company .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.company .description {
+    flex-grow: 1;
+    color: #888;
+}
+
+.company .links {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
