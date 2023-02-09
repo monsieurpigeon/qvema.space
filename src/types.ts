@@ -3,4 +3,5 @@ export interface iCompany {
   description: string;
   url: string;
   instagram?: string;
+  season: number;
 }

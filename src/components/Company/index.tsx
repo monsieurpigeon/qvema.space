@@ -8,6 +8,7 @@ interface CompanyProps {
 export function Company({ company }: CompanyProps) {
   return (
     <div className="card company">
+      <div className="chip">Saison {company.season}</div>
       <div className="title">{company.title}</div>
       <div className="description">{company.description}</div>
       <div className="links">
