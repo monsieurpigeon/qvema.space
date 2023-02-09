@@ -29,7 +29,7 @@ export const COMPANIES = [
   },
   {
     title: "NKD Puzzle",
-    description: "Les puzzles du metavers",
+    description: "Les Rubik's cubes du metavers",
     url: "https://nkd-puzzle.com/fr/",
     instagram: "https://www.instagram.com/nkdpuzzle/",
     season: 3,

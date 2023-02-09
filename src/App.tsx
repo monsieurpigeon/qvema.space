@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="App">
       <h1>QVEMA Space</h1>
+      <h3>Les Pitchs</h3>
       <div className="card-list">
         {companies.map((company: iCompany) => {
           return <Company key={company.url} company={company} />;
