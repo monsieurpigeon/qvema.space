@@ -11,6 +11,8 @@
     border: 1px solid transparent;
     gap: 20px;
     position: relative;
+    cursor: pointer;
+    user-select: none;
 }
 
 .card:hover {
