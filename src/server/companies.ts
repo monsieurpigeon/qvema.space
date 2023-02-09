@@ -22,7 +22,7 @@ export const COMPANIES = [
   },
   {
     title: "Resap - Paris",
-    description: "Apprend à fabriquer tes fringues avec des déchets",
+    description: "Apprends à fabriquer tes fringues avec des déchets",
     url: "https://resap-paris.com/",
     instagram: "https://www.instagram.com/resap_paris/",
     season: 3,
