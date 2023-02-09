@@ -1,13 +1,21 @@
 .card {
-    background: #222;
+    background-color: #222;
     border-radius: 3px;
-    flex-basis: 0;
+    flex-basis: 20%;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
     padding: 1rem;
+    border: 1px solid transparent;
+    gap: 20px;
+}
+
+.card:hover {
+    background-color: #333;
+    border: 1px solid #333;
+    transition: background-color 10s linear;
 }
 
 .company .title {

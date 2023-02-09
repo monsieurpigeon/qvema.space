@@ -11,7 +11,7 @@ function App() {
       <h1>QVEMA Space</h1>
       <div className="card-list">
         {companies.map((company: iCompany) => {
-          return <Company company={company} />;
+          return <Company key={company.url} company={company} />;
         })}
       </div>
       <p className="read-the-docs">

@@ -7,8 +7,9 @@
 
 .card-list {
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  flex-wrap:wrap;
+  justify-content: flex-start;
+  gap: 200px;
 }
 
 .read-the-docs {
