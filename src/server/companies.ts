@@ -1,3 +1,12 @@
+import { InvestorID } from "./investors";
+
+const TAGS = {
+  hard: "Hardware",
+  soft: "Software",
+  food: "Food",
+  health: "Health",
+} as const;
+
 export const COMPANIES = [
   {
     title: "Heliowater",
@@ -14,11 +23,69 @@ export const COMPANIES = [
     season: 3,
   },
   {
+    id: "BOBDA",
     title: "Bob - Daan tech",
     description: "Le lave-vaisselle pour les nerds, par les nerds",
     url: "https://daan.tech/fr/produit/bob-mini-lave-vaisselle/",
     instagram: "https://www.instagram.com/daan_tech_fr/",
-    season: 3,
+    season: 2,
+    episode: 1,
+    offers: { from: "BOBDA", value: 500000, interest: 5 },
+    invested: true,
+    citation:
+      "On a passé 2 ans dans une cave à développer un lave-vaisselle, ça laisse des séquelles",
+    investors: [
+      {
+        from: InvestorID.LARCH,
+        value: 500000,
+        interest: 7,
+        note: "+2% de BSPCE",
+      },
+      { from: InvestorID.SIMON, value: 500000, interest: 7 },
+      { from: InvestorID.ANDRE, value: 500000, interest: 7 },
+    ],
+    tags: [TAGS.hard],
+  },
+  {
+    id: "PAPPI",
+    title: "Pap et Pille",
+    description: "Les biscuits apéro du Terre - Mars",
+    url: "https://papetpille.com/",
+    instagram: "https://www.instagram.com/papetpille",
+    season: 2,
+    episode: 1,
+    offers: { from: "PAPPI", value: 300000, interest: 15 },
+    invested: true,
+    citation:
+      "Ce qu'il faut savoir dans l'histoire de notre entreprise c'est que c'est d'abord une histoire d'amour",
+    investors: [{ from: InvestorID.NADIR, value: 300000, interest: 15 }],
+    tags: [TAGS.food],
+  },
+  {
+    id: "DENTA",
+    title: "Denta Pass",
+    description: "Le pansement pour les dents",
+    url: "https://www.dentapass.com/",
+    instagram: "https://www.instagram.com/dentapass/",
+    season: 2,
+    episode: 1,
+    offers: {
+      from: "DENTA",
+      value: 300000,
+      interest: 25,
+      note: "10% du CA sur 10 ans ou 25% du capital",
+    },
+    citation: "",
+    invested: false,
+    investors: [],
+    tags: [TAGS.health],
+    founders: [
+      {
+        name: "Cyril Berrebi",
+        profession: "Chirurgien dentiste",
+        city: "Grenoble",
+      },
+    ],
   },
   {
     title: "Resap - Paris",
@@ -46,7 +113,7 @@ export const COMPANIES = [
     description: "Le savon solide qui te fait voyager",
     url: "https://unbottled.co/",
     instagram: "https://www.instagram.com/unbottled.co/",
-    season: 3,
+    season: 2,
     episode: 1,
     invested: false,
   },

@@ -1,4 +1,5 @@
 import { iCompany } from "../../types";
+import { currencyFormatter } from "../../utils/formatter";
 import "./style.css";
 
 interface CompanyProps {
@@ -17,6 +18,12 @@ export function Company({ company }: CompanyProps) {
         {company.invested == null ? "" : company.invested ? "💰" : "🕊️"}
       </div>
       <div className="description">{company.description}</div>
+      {company.offers ? (
+        <div>
+          Offre initiale: {currencyFormatter.format(company.offers?.value)} pour{" "}
+          {company.offers?.interest}%
+        </div>
+      ) : null}
       <div className="links">
         <a href={company.url} target="_blank" rel="noreferrer">
           En savoir plus

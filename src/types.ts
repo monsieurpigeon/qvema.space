@@ -1,3 +1,10 @@
+export interface iOffer {
+  from: string;
+  value: number;
+  interest: number;
+  note?: string;
+}
+
 export interface iCompany {
   title: string;
   description: string;
@@ -6,4 +13,5 @@ export interface iCompany {
   season: number;
   episode?: number;
   invested?: boolean;
+  offers?: iOffer;
 }

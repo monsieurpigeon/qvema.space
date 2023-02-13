@@ -15,7 +15,7 @@ function App() {
           return <Company key={company.url} company={company} />;
         })}
       </div>
-      <p className="read-the-docs">
+      <div className="footer">
         Retrouver le code de la page sur{" "}
         <a
           href="https://github.com/monsieurpigeon/qvema.space"
@@ -24,7 +24,7 @@ function App() {
         >
           Github
         </a>
-      </p>
+      </div>
     </div>
   );
 }
