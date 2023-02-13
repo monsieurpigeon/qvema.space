@@ -48,5 +48,6 @@ export const COMPANIES = [
     instagram: "https://www.instagram.com/unbottled.co/",
     season: 3,
     episode: 1,
+    invested: false,
   },
 ];

@@ -12,7 +12,10 @@ export function Company({ company }: CompanyProps) {
         S0{company.season}
         {company.episode ? `E0${company.episode}` : ""}
       </div>
-      <div className="title">{company.title}</div>
+      <div className="title">
+        {company.title}{" "}
+        {company.invested == null ? "" : company.invested ? "💰" : "🕊️"}
+      </div>
       <div className="description">{company.description}</div>
       <div className="links">
         <a href={company.url} target="_blank" rel="noreferrer">

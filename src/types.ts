@@ -5,4 +5,5 @@ export interface iCompany {
   instagram?: string;
   season: number;
   episode?: number;
+  invested?: boolean;
 }
