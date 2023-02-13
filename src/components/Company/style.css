@@ -12,7 +12,8 @@
     position: relative;
     cursor: pointer;
     user-select: none;
-    width: 300px;
+    max-width: 300px;
+    min-width: 300px;
 }
 
 .card:hover {
