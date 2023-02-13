@@ -4,4 +4,5 @@ export interface iCompany {
   url: string;
   instagram?: string;
   season: number;
+  episode?: number;
 }

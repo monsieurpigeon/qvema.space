@@ -8,7 +8,10 @@ interface CompanyProps {
 export function Company({ company }: CompanyProps) {
   return (
     <div className="card company">
-      <div className="chip">Saison {company.season}</div>
+      <div className="chip">
+        S0{company.season}
+        {company.episode ? `E0${company.episode}` : ""}
+      </div>
       <div className="title">{company.title}</div>
       <div className="description">{company.description}</div>
       <div className="links">

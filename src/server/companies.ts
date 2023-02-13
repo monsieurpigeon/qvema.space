@@ -41,4 +41,12 @@ export const COMPANIES = [
     instagram: "https://www.instagram.com/design.aglae",
     season: 3,
   },
+  {
+    title: "Unbottled",
+    description: "Le savon solide qui te fait voyager",
+    url: "https://unbottled.co/",
+    instagram: "https://www.instagram.com/unbottled.co/",
+    season: 3,
+    episode: 1,
+  },
 ];
